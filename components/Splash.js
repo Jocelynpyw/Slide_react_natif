@@ -1,7 +1,11 @@
-import React , {Component} from 'react';
+import React  from 'react';
 import { StyleSheet,Text ,View ,Image } from 'react-native';
-export default class Splash extends Component{
-    render(){
+
+const  Splash =({navigation})=>{
+    setTimeout(()=>{
+        navigation.replace('Login')
+    },3000)
+  
         return(
             <View style={styles.container}>
                 <View style={{flex:0.2}}>
@@ -12,14 +16,10 @@ export default class Splash extends Component{
                     <Text style={{color:'black',marginVertical:50,fontWeight:'bold',fontSize:18}}>Educating for Tomorrow</Text>
                     <Image source={require('../images/group285.png')} style={{height:300,width:300,marginLeft:30}}></Image>
                 </View>
-
-
-
-
             </View>
         )
-    }
 }
+export default Splash
 const styles = StyleSheet.create({
     container:{
         backgroundColor:'white',
