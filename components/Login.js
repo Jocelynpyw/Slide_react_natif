@@ -1,6 +1,6 @@
 import { CheckBox } from "react-native-elements";
 import React, { useState } from "react";
-import {StyleSheet, View, Text ,SafeAreaView, StatusBar, TextInput, Button } from "react-native";
+import {StyleSheet, View, Text ,SafeAreaView, StatusBar, TextInput, Button ,TouchableOpacity} from "react-native";
 // import { Icon } from "react-native-vector-icons/Icon";
 
 const Login = () => {
@@ -8,6 +8,7 @@ const Login = () => {
     (false);
 
   return (
+    // https://reactnative.dev/docs/touchableopacity
     <SafeAreaView style={styles.containerPrincipal} >
         <StatusBar barStyle="dark-content"/>
         <View style={styles.containerPrincipal} >

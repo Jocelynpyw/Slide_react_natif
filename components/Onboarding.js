@@ -1,5 +1,5 @@
 import React, { useState }  from 'react';
-import { StyleSheet,Text ,View ,Image,Button } from 'react-native';
+import { StyleSheet,Text ,View ,Image,Button,TouchableOpacity } from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import { Dimensions } from "react-native";
 import Login from './Login';
@@ -58,16 +58,27 @@ const  Splash =({navigation})=>{
         return(
             <View style={{
                 padding:12,
-                marginLeft:30
+                marginLeft:30,
               
-            }}><Button title={label} style={{
-                color:'red',
+            }}><TouchableOpacity style={{
+                width:96,
+                height:42,
+                justifyContent:'center',
+                textAlign:'center',
                 fontWeight:'600',
                 fontSize:10,
+                borderRadius:11,
+                backgroundColor:'#5F81C0',
+                marginTop:-18,
+                marginRight:40,
+                color:'white',
+
+
             
                
             }}>
-            </Button >
+                <Text style={{textAlign:'center',color:'white',fontSize:13,fontWeight:'400'}}>{label}</Text>
+            </TouchableOpacity >
 
             </View>
         )
@@ -78,10 +89,24 @@ const  Splash =({navigation})=>{
                 flex:1,
                 flexDirection:'row',
                 padding:12,
+                justifyContent:'center',
+                alignContent:'center',
+                alignItems:'center',
+                marginBottom:20
+
 
               
             }}>
-                <Button title={label}/>
+                <TouchableOpacity
+                style={{
+                    width:'100%',
+                    height:42,
+                    backgroundColor:'#5F81C0',
+                    borderRadius:11,alignItems:'center',
+                    justifyContent:'center',
+                }}
+                
+                ><Text style={{color:'white',fontSize:13}}>{label}</Text></TouchableOpacity>
             </View>
         )
       }
