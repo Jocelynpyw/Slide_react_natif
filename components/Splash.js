@@ -1,9 +1,10 @@
 import React  from 'react';
 import { StyleSheet,Text ,View ,Image } from 'react-native';
+import Onboarding from './Onboarding'
 
 const  Splash =({navigation})=>{
     setTimeout(()=>{
-        navigation.replace('Login')
+        navigation.replace('Onboarding')
     },3000)
   
         return(

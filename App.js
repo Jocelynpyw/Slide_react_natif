@@ -10,7 +10,7 @@ import React from 'react';
 import {View,Text} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import {Splash,Login} from './components';
+import {Splash,Login,Onboarding} from './components';
 
 
 
@@ -22,6 +22,7 @@ const App: () => Node = () => {
       <Stack.Navigator     screenOptions={{headerShown:false}}>
         <Stack.Screen name='Splash' component={Splash} />
         <Stack.Screen name='Login' component={Login} />
+        <Stack.Screen name='Onboarding' component={Onboarding} />
       </Stack.Navigator>
 
     </NavigationContainer>
