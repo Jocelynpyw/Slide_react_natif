@@ -1,4 +1,5 @@
 import React, { useState }  from 'react';
+
 import { StyleSheet,Text ,View ,Image,Button,TouchableOpacity } from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import { Dimensions } from "react-native";
@@ -48,6 +49,7 @@ const  Splash =({navigation})=>{
                 lineHeight:15,
                 marginLeft:40
             }}>
+                
                 {label}
             </Text>
 
@@ -69,7 +71,7 @@ const  Splash =({navigation})=>{
                 fontSize:10,
                 borderRadius:11,
                 backgroundColor:'#5F81C0',
-                marginTop:-18,
+                marginTop:-14,
                 marginRight:40,
                 color:'white',
 
