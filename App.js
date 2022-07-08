@@ -11,6 +11,7 @@ import {View,Text} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {Splash,Login,Onboarding} from './components';
+import { Icon } from 'react-native-vector-icons/FontAwesome';
 
 
 

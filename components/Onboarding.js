@@ -49,7 +49,6 @@ const  Splash =({navigation})=>{
                 lineHeight:15,
                 marginLeft:40
             }}>
-                
                 {label}
             </Text>
 
@@ -79,7 +78,8 @@ const  Splash =({navigation})=>{
             
                
             }}>
-                <Text style={{textAlign:'center',color:'white',fontSize:13,fontWeight:'400'}}>{label}</Text>
+                <Text style={{textAlign:'center',color:'white',fontSize:13,fontWeight:'400'}}>{label}</Text> 
+                {/* <Icon name="rocket" size={30} color="#900" /> */}
             </TouchableOpacity >
 
             </View>
