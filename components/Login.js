@@ -1,5 +1,6 @@
 // import { CheckBox } from "react-native-elements";
 import React, { useState } from "react";
+import { Image } from "react-native";
 import {StyleSheet, View, Text ,SafeAreaView, StatusBar, TextInput, Button ,TouchableOpacity} from "react-native";
 // import { Icon } from "react-native-vector-icons/Icon";
 
@@ -84,10 +85,14 @@ const Login = () => {
         <View style={styles.loginSection}>
             <Text style={{marginVertical:10,fontSize:13.5,fontWeight:'bold',color:'#6A6A6D'}}>Login With Social Media</Text>
 
-            <View style={{flexDirection:'row',marginTop:5}}>
-            <View style={{flex:0.5 ,margin:5 ,backgroundColor:'#FBFBFB',borderRadius:16, height:53,alignContent:'center',textAlign:'center',justifyContent:'center'}}><TouchableOpacity ><Text style={{textAlign:"center",justifyContent:'center',color:'black',fontSize:14}}> Google</Text></TouchableOpacity></View>
-            <View style={{flex:0.5 ,margin:5 ,backgroundColor:'#FBFBFB',borderRadius:16, height:53,alignContent:'center',textAlign:'center',justifyContent:'center'}}><TouchableOpacity ><Text style={{textAlign:"center",justifyContent:'center',color:'black',fontSize:14}}> Facebook</Text></TouchableOpacity></View>
-            {/* <View style={{flex:0.5, margin:5 }}><Button style={styles.loginSectionbtn} title="Facebook"/></View> */}
+            <View style={{flexDirection:'row',alignItems:'center',marginTop:5}}>
+            <View style={{flex:0.5,flexDirection:'row' ,margin:5 ,backgroundColor:'#FBFBFB',borderRadius:16, height:53,justifyContent:'center'}}><TouchableOpacity >
+                <Image  style={styles.logo} source={require('../images/google.png')}/>
+                <Text style={{textAlign:"center",justifyContent:'center',color:'black',fontSize:14}}> Google</Text></TouchableOpacity></View>
+            <View style={{flex:0.5 ,margin:5 ,backgroundColor:'#FBFBFB',borderRadius:16, height:53,alignContent:'center',textAlign:'center',justifyContent:'center',flexDirection:'row'}}><TouchableOpacity >
+            <Image style={styles.logo} source={require('../images/facebook.png')}/>
+
+                <Text style={{textAlign:"center",justifyContent:'center',color:'black',fontSize:14}}> Facebook</Text></TouchableOpacity></View>
                 
             </View>
         </View>
@@ -150,6 +155,10 @@ const styles = StyleSheet.create({
         borderRadius:50,
         backgroundColor:'#FBFBFB'
 
+    },
+    logo:{
+        height:20,
+        width:20
     }
 
 

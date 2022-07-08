@@ -9,5 +9,5 @@ import Splash from './components/Splash';
 import Login from './components/Login';
 import Onboarding from './components/Onboarding';
 
-AppRegistry.registerComponent(appName, () => Login);
-// AppRegistry.registerComponent(appName, () => App);
+// AppRegistry.registerComponent(appName, () => Login);
+AppRegistry.registerComponent(appName, () => App);
